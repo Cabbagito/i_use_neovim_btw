@@ -1,0 +1,8 @@
+-- TODO: todo stuff
+-- BUG: bug stuff
+-- FIX: fix stuff 
+-- HACK: hack stuff 
+-- WARN: warn stuff
+-- WARNING: warning stuff
+-- NOTE:  note stuff 
+-- PERF: either perfect or performance
