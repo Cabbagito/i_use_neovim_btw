@@ -73,10 +73,10 @@ require("lazy").setup({
 		priority = 1000,
 		opts = {},
 	},
-	{
-		"karb94/neoscroll.nvim",
-		opts = {},
-	},
+	-- {
+	-- 	"karb94/neoscroll.nvim",
+	-- 	opts = {},
+	-- },
 	{
 		"gbprod/yanky.nvim",
 		opts = {
@@ -105,5 +105,20 @@ require("lazy").setup({
 			-- or leave it empty to use the default settings
 			-- refer to the configuration section below
 		},
+	},
+	{
+		"sainnhe/everforest",
+		lazy = false,
+		priority = 1000,
+	},
+	{
+		"sainnhe/edge",
+		lazy = false,
+		priority = 1000,
+	},
+	{
+		"sainnhe/sonokai",
+		lazy = false,
+		priority = 1000,
 	},
 })

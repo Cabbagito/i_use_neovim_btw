@@ -1,10 +1,8 @@
 require("catppuccin").setup({
-	flavour = "frappe", -- latte, frappe, macchiato, mocha
-	background = { -- :h background
+	flavour = "macchiato", -- latte, frappe, macchiato, mocha background = { -- :h background
 		light = "latte",
 		dark = "macchiato",
-	},
-	transparent_background = false, -- disables setting the background color.
+	transparent_background = true, -- disables setting the background color.
 	show_end_of_buffer = true, -- shows the '~' characters after the end of buffers
 	term_colors = true, -- sets terminal colors (e.g. `g:terminal_color_0`)
 	dim_inactive = {
@@ -47,18 +45,27 @@ require("catppuccin").setup({
 	},
 })
 
-
 require("tokyonight").setup({
 	style = "storm", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
 	light_style = "day", -- The theme is used when the background is set to light
-	transparent = false, -- Enable this to disable setting the background color
+	transparent = true, -- Enable this to disable setting the background color
 	terminal_colors = true,
 })
 
+-- vim.g.everforest_transparent_background = 1
+-- vim.g.everforest_better_performance = 1
+
+-- vim.g.edge_transparent_background = 1
+-- vim.g.edge_better_performance = 1
+
+-- vim.g.sonokai_transparent_background = 1
+vim.g.sonokai_style = "andromeda"
+vim.g.sonokai_better_performance = 1
 
 -- Favs
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme("catppuccin")
 -- vim.cmd.colorscheme "tokyonight"
+-- vim.cmd.colorscheme("sonokai")
 
 -- Catppuccin
 -- vim.cmd.colorscheme "catppuccin-macchiato"
@@ -71,3 +78,15 @@ vim.cmd.colorscheme "catppuccin"
 -- vim.cmd.colorscheme "tokyonight-moon"
 -- vim.cmd.colorscheme "tokyonight-night"
 -- vim.cmd.colorscheme "tokyonight-day"
+
+-- Other
+-- vim.cmd.colorscheme("everforest")
+-- vim.cmd.colorscheme("edge")
+
+vim.cmd([[
+  " Set current line number to orange
+  highlight CursorLineNr ctermfg=214 guifg=#ffaf00
+
+  " Set normal line numbers to be more visible
+  highlight LineNr ctermfg=250 guifg=#bcbcbc
+]])

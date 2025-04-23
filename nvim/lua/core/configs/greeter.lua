@@ -22,8 +22,15 @@ dashboard.section.bottom_buttons.val = {
 	center_button(dashboard.button("q", "Quit", "<cmd>q <CR>")),
 }
 
-dashboard.config.opts.margin = 35 -- You can adjust this value
-
+local editor_width = vim.o.columns
+dashboard.config.opts.margin = math.floor(editor_width / 2) - 20 -- You can adjust this value
+vim.api.nvim_create_autocmd({"VimResized"}, {
+  callback = function()
+    local editor_width = vim.o.columns
+    local content_width = 20  -- Approximate width of your dashboard content
+    dashboard.config.opts.margin = math.floor(editor_width / 2) - content_width
+  end
+})
 -- Center all groups
 for _, section in ipairs(dashboard.config.layout) do
 	if section.type == "group" then
@@ -45,7 +52,6 @@ dashboard.section.header.val = {
 
 dashboard.config.layout[1].val = 5 -- Increase this number to move the art down
 
-
 vim.api.nvim_set_hl(0, "DashboardLogo", { fg = "#ee9550" })
 -- Green = #b3f2b6
 -- Pink = #f2b3ef
@@ -56,5 +62,4 @@ dashboard.section.header.opts.hl = "DashboardLogo"
 
 alpha.setup(dashboard.opts)
 
-
-vim.keymap.set('n', '<leader>hs', ':Alpha<CR>', { desc = 'Homescreen' })
+vim.keymap.set("n", "<leader>hs", ":Alpha<CR>", { desc = "Homescreen" })

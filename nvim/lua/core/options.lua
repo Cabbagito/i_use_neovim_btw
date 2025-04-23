@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+vim.opt.termguicolors = true
 vim.opt.showmode = false
 vim.opt.cursorline = true
 vim.opt.tabstop = 4

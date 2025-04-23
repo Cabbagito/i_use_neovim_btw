@@ -1,10 +1,8 @@
 require("lualine").setup({
 	options = {
 		icons_enabled = true,
-		theme = "auto",
-		-------------------------------------------
-		--
-		--		   Theme Picks
+		theme = "palenight", -- palenight, solarized_light
+		-- Theme Picks
 		--
 		--    Dark   :      auto  -lol
 		--   Light   :    onelight
@@ -13,7 +11,7 @@ require("lualine").setup({
 		--   	Tier List
 		--
 		-- Tier / ColorSchemes
-		--  S   / auto onelight(l) horizon powerline_dark
+		--  S   / auto onelight(l) horizon powerline_dark dracula OceanicNext Tomorrow
 		--  A   / ayu_light solarized_light
 		-- <=B  / gruvbox_dark
 		--  ^
@@ -73,7 +71,7 @@ require("lualine").setup({
 		lualine_a = { "mode" },
 		lualine_c = { { "filetype" } },
 		lualine_b = { { "filename", path = 4 } },
-		lualine_y = {"branch"},
+		lualine_y = { "branch" },
 		lualine_x = { "diagnostics" },
 		lualine_z = {
 			{
