@@ -19,6 +19,7 @@ vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "Find Recent File" 
 vim.keymap.set("n", "<leader>fc", builtin.commands, { desc = "Find Command" })
 -- vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Find Diagnostic" })
 vim.keymap.set("n", "<leader>ft", ":TodoTelescope<CR>", { desc = "Find Todo" })
+vim.keymap.set("n", "<leader>cs", builtin.colorscheme, { desc = "Find Colorscheme" })
 
 vim.keymap.set("n", "<leader>nv", function()
 	require("telescope.builtin").find_files({

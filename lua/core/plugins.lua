@@ -30,7 +30,7 @@ require("lazy").setup({
 		branch = "harpoon2",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
-	{ "ThePrimeagen/vim-be-good", cmd = "VimBeGood" },
+	{ "ThePrimeagen/vim-be-good",      cmd = "VimBeGood" },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -121,4 +121,5 @@ require("lazy").setup({
 		lazy = false,
 		priority = 1000,
 	},
+	{ "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
 })

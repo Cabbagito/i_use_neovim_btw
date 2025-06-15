@@ -13,6 +13,7 @@ require("core.configs.twilight")
 require("core.configs.terminal")
 require("core.configs.help-pages")
 require("core.configs.yank")
+require("core.configs.virtual")
 
 -- require("core.configs.neoscroll")
 -- require("core.configs.nvim-tree")

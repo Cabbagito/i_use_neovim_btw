@@ -1,7 +1,7 @@
 require("lualine").setup({
 	options = {
 		icons_enabled = true,
-		theme = "palenight", -- palenight, solarized_light
+		theme = "solarized_light",
 		-- Theme Picks
 		--
 		--    Dark   :      auto  -lol

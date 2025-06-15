@@ -9,6 +9,7 @@
   "everforest": { "branch": "master", "commit": "29a1faf8813b47ca292433835433efb9cb98bfa0" },
   "floating-help.nvim": { "branch": "main", "commit": "1e61cb6804b7aac7fb0ccfdccbbd01a0a4c92241" },
   "friendly-snippets": { "branch": "main", "commit": "31f2a2657b6261724313281fe0d8ba6f43f4a4fa" },
+  "glow.nvim": { "branch": "main", "commit": "5d5954b2f22e109d4a6eba8b2618c5b96e4ee7a2" },
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },
