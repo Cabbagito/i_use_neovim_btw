@@ -9,7 +9,7 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", { desc = "Vertical split" })
-vim.keymap.set("n", "<leader>sp", ":split<CR>", { desc = "Horizontal split" })
+vim.keymap.set("n", "<leader>sh", ":split<CR>", { desc = "Horizontal split" })
 
 vim.keymap.set("n", "<leader>hh", ":nohlsearch<CR>")
 

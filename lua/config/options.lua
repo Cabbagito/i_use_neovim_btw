@@ -18,3 +18,11 @@ vim.wo.number = true
 vim.opt.clipboard = "unnamedplus"
 
 vim.cmd("autocmd BufEnter * set formatoptions-=cro")
+
+-- Suppress annoying notifications
+vim.notify = function(msg, log_level, opts)
+  -- Only show errors, suppress info/warn notifications
+  if log_level == vim.log.levels.ERROR then
+    vim.api.nvim_echo({{msg, "ErrorMsg"}}, true, {})
+  end
+end
