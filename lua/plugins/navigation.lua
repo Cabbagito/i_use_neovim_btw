@@ -13,7 +13,7 @@ return {
 			},
 			"nvim-telescope/telescope-ui-select.nvim",
 		},
-		cmd = "Telescope",
+		lazy = false, -- Load immediately for ui-select
 		keys = {
 			{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File" },
 			{ "<leader>fw", "<cmd>Telescope live_grep<cr>", desc = "Find Word" },

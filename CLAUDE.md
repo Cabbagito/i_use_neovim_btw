@@ -19,9 +19,12 @@
 - Notifications are suppressed except errors
 - Catppuccin theme with transparent background
 - Custom terminal implementation as a plugin
+- Telescope loads immediately for ui-select functionality
 
 ## Testing Commands
 When making changes, test with:
 ```bash
 nvim --headless -c "checkhealth" -c "qa"
 ```
+
+

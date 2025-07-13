@@ -6,7 +6,7 @@ A highly customized Neovim configuration focused on modern development workflows
 
 - **Package Management**: Lazy.nvim for fast plugin loading
 - **LSP Integration**: Full LSP support with Mason v2 for language server management
-- **Fuzzy Finding**: Telescope for file/text searching and navigation
+- **Fuzzy Finding**: Telescope for file/text searching and navigation (with ui-select for better prompts)
 - **File Management**: Oil.nvim for efficient file operations
 - **Syntax Highlighting**: Treesitter for advanced syntax highlighting
 - **Code Completion**: nvim-cmp with multiple sources and AI assistance (Supermaven)
@@ -143,3 +143,5 @@ Pre-configured LSP servers:
 - **Rust** - rust_analyzer (with rust-tools.nvim)
 
 Additional servers can be installed via `:Mason`
+
+
